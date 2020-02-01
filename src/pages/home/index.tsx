@@ -4,6 +4,9 @@ import {
     fallbackImg,
 } from 'utils';
 
+
+  
+
 import PageContainer from 'components/pageContainer';
 import Button from 'components/button';
 import {
@@ -44,14 +47,16 @@ import {
 
 class Home extends React.Component {
     public render() {
+
         return(
             <div className="home">
+
                 <PageContainer className="first" middle>
                     <div className="col-sm-6 col-xs-12">
                         <h3 className="upper">{transl('first.one')}</h3>
                         <h1>{transl('first.two')}</h1>
                         <h3>{transl('first.three')}</h3>
-                       <a href="https://t.me/sumokoinofficial"><Button round uppercase >{transl('first.four')}</Button></a> 
+                       <a href="https://t.me/sumokoinofficial"><Button round uppercase  >{transl('first.four')}</Button></a> 
                     </div>
                     <div className="col-sm-6 col-xs-12 first-xs img-right">
                         <img src={first} alt="Sumokoin" onError={e => fallbackImg(e)} />
