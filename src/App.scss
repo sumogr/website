@@ -1,0 +1,13 @@
+// base
+@import 'styling/colors';
+@import 'styling/base';
+
+// components
+@import 'components/header/style';
+@import 'components/footer/style';
+@import 'components/pageContainer/style';
+@import 'components/button/style';
+@import 'components/box/style';
+
+// pages
+@import 'pages/home/style';

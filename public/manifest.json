@@ -1,0 +1,15 @@
+{
+  "short_name": "Sumokoin",
+  "name": "Sumokoin",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "128x128 64x64 32x32 24x24 16x16",
+      "type": "image/x-png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#1E1D8A",
+  "background_color": "#1E1D8A"
+}

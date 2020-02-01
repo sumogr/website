@@ -1,0 +1,49 @@
+button {
+    font-size: .9rem;
+    font-weight: 300;
+    line-height: 35px;
+    padding: 3px 30px;
+    border-radius: 5px;
+    border: 2px solid $secondary;
+    color: $secondary;
+    text-transform: none;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+
+    &:hover, &:active {
+        background: $secondary;
+        border-color: $secondary;
+        color: #fff;
+    }
+
+    &.fill {
+        background: $primary;
+        color: #fff;
+        border-color: $primary;
+    }
+
+    &.round {border-radius: 25px;}
+    
+    &.uppercase {text-transform: uppercase;}
+
+    &.block {display: block;}
+
+    &.full {width: 100%;}
+
+    &.right {float: right;}
+
+    &.left {float: left;}
+
+    &:disabled {
+        cursor: default;
+        opacity: .5;
+    }
+
+    &.small {
+        padding: 0 10px;
+        height: 30px;
+        line-height: 20px;
+        font-size: .8rem;
+    }
+}

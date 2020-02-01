@@ -1,0 +1,13 @@
+.page-container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .row {
+        margin-right: .1rem;
+        margin-left: .1rem;
+    }
+
+    .full-row {min-height: 100vh;}
+
+    .big {padding: 8rem 0;}
+}

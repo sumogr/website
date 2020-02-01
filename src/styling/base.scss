@@ -1,0 +1,55 @@
+@import 'flexboxgrid';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+html,
+body {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	background: linear-gradient(to bottom, #0e0e63, #13126d, #181678, #1c1b82, #211f8d);
+	color: #fff;
+	-webkit-overflow-scrolling: touch;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	&:hover {color: $secondary;}
+}
+
+h1, h2, h3 {margin: 1rem 0;}
+h1 {
+	font-size: 2.2rem;
+	font-weight: 400;
+}
+h2 {font-size: 1.7rem;}
+h3 {font-size: 1.3rem;}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+textarea {resize: none;}
+
+ul, ol, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container-fluid {padding: 0 4rem;}
+
+// responsive
+$responsive: 768px;
+
+@media(max-width: $responsive) {
+	.container-fluid {padding: 0 1.5rem;}
+	h1 {font-size: 1.8rem;}
+	h2 {font-size: 1.4rem;}
+	h3 {font-size: 1.1rem;}
+}

@@ -1,0 +1,34 @@
+footer {
+    width: 100%;
+    float: left;
+    position: relative;
+    background-color: $primary-dark;
+
+    img.logo {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    div.col-xs-12 {padding: 1rem 0;}
+
+    ul {
+        margin-bottom: 1rem;
+        li {
+            &.title {
+                font-size: 1.2rem;
+                font-weight: 500;
+            }
+            svg {
+                width: 1.5rem !important;
+                font-size: 1.4rem !important;
+                margin-top: .5rem;
+                margin-right: .5rem;
+            }
+            svg:hover {
+                -webkit-transform: translateY(-2px);
+                transform: translateY(-2px);
+            }
+        }
+    }
+}
