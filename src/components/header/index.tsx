@@ -12,9 +12,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faAlignCenter,
     faWallet,
-    faFile,
     faCodeBranch,
-    faExchangeAlt
+    faExchangeAlt,
+    faCubes
 } from '@fortawesome/free-solid-svg-icons';
 
 interface Props {
@@ -37,17 +37,18 @@ const Header: React.SFC<Props> = ({children}) => {
                                 <FontAwesomeIcon icon={faAlignCenter} />
                                 <span className="header-features-text">{transl('header.one')}</span>
                             </li>
+                            
                             <li title={transl('header.six')} onClick={() => customScroll(document.getElementById('exchanges') as HTMLElement)}>
                                 <FontAwesomeIcon icon={faExchangeAlt} />
                                 <span className="header-exchanges-text">{transl('header.six')}</span>
                             </li>
+                            <a href="https://miningpoolstats.stream/sumokoin"><li title={transl('header.three')}>
+                                <FontAwesomeIcon icon={faCubes} />
+                                <span className="header-whitepaper-text">{transl('header.three')}</span>
+                            </li></a>
                             <li title={transl('header.two')} onClick={() => customScroll(document.getElementById('wallet') as HTMLElement)}>
                                 <FontAwesomeIcon icon={faWallet} />
                                 <span className="header-wallet-text">{transl('header.two')}</span>
-                            </li>
-                            <li title={transl('header.three')} onClick={() => customScroll(document.getElementById('whitepaper') as HTMLElement)}>
-                                <FontAwesomeIcon icon={faFile} />
-                                <span className="header-whitepaper-text">{transl('header.three')}</span>
                             </li>
                             <li title={transl('header.four')} onClick={() => customScroll(document.getElementById('development') as HTMLElement)}>
                                 <FontAwesomeIcon icon={faCodeBranch} />

@@ -2,7 +2,6 @@ import * as React from 'react';
 import {
     transl,
     fallbackImg,
-    customScroll
 } from 'utils';
 
 import PageContainer from 'components/pageContainer';
@@ -20,12 +19,10 @@ import fifth from 'images/fifth.png';
 import sixth from 'images/sixth.png';
 import seventh from 'images/seventh.png';
 import eighth from 'images/eighth.png';
-import eleventh from 'images/eleventh.png';
 import tenth from 'images/tenth.png';
 import windows from 'images/windows.png';
 import macos from 'images/macos.png';
 import linux from 'images/linux.png';
-import twelveth from 'images/twelveth.png';
 
 import exrates from 'images/exchanges/exrates.png';
 import indodax from 'images/exchanges/indodax.png';
@@ -39,8 +36,11 @@ import citex from 'images/exchanges/citex.png';
 import coinex from 'images/exchanges/coinex.png';
 import gjcom from 'images/exchanges/gjcom.png';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+} from '@fortawesome/free-brands-svg-icons';
 
 class Home extends React.Component {
     public render() {
@@ -51,7 +51,7 @@ class Home extends React.Component {
                         <h3 className="upper">{transl('first.one')}</h3>
                         <h1>{transl('first.two')}</h1>
                         <h3>{transl('first.three')}</h3>
-                        <Button round uppercase onClick={() => customScroll(document.getElementById('features') as HTMLElement)}>{transl('first.four')}</Button>
+                       <a href="https://t.me/sumokoinofficial"><Button round uppercase >{transl('first.four')}</Button></a> 
                     </div>
                     <div className="col-sm-6 col-xs-12 first-xs img-right">
                         <img src={first} alt="Sumokoin" onError={e => fallbackImg(e)} />
@@ -149,7 +149,6 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-xs-12">
                         <h1>{transl('seventh.one')}</h1>
                         <h2 className="under">{transl('seventh.two')} v0.3.0</h2>
-                        <small>Published on 18/11/2019</small>
                         <ul>
                             <li>
                                 <img src={windows} alt="Windows" onError={e => fallbackImg(e)} />
@@ -172,31 +171,10 @@ class Home extends React.Component {
                         </ul>
                     </div>
                 </PageContainer>
-                <PageContainer className="eleventh" big>
-                    <div className="col-sm-6 col-xs-12 first-xs img-right">
-                        <img src={eleventh} onError={e => fallbackImg(e)} />
-                    </div>
-                    <div className="col-sm-6 col-xs-12">
-                        <h1>{transl('eleventh.one')}</h1>
-                        <h2 className="under"><a href="https://wallet.sumokoin.com/">{transl('eleventh.two')}</a></h2>
-                        <small>Published on 04/01/2020</small>                    
-                    </div>
-                </PageContainer>
-                <PageContainer className="twelveth" big>
-                    <div className="col-sm-6 col-xs-12">
-                        <img src={twelveth} onError={e => fallbackImg(e)} />
-                    </div>
-                    <div className="col-sm-6 col-xs-12">
-                        <h1>{transl('twelveth.one')}</h1>
-                        <h2 className="under"><a href="https://github.com/sumoprojects/sumo-android-wallet">{transl('twelveth.two')}</a></h2>
-                        <h2 className="under">Forthcoming release in February 2020</h2>                    
-                    </div>
-                </PageContainer>
                 <PageContainer className="eighth" big>
                     <div className="col-sm-6 col-xs-12">
                         <h1>{transl('eighth.one')}</h1>
                         <h2 className="under">{transl('eighth.two')} v0.6.0.1 "Sendai"</h2>
-                        <small>Published on 12/11/2019</small>
                         <ul>
                             <li>
                                 <img src={windows} alt="Windows" onError={e => fallbackImg(e)} />

@@ -8,15 +8,15 @@ export default {
     header: {
         one: 'Features',
         two: 'Wallet',
-        three: 'Whitepaper',
+        three: 'Start Mining',
         four: 'Development Path',
-        six: 'Exchanges'
+        six: 'Buy'
     },
     first: {
         one: 'Digital Cash',
         two: 'Privacy Without Compromise.',
-        three: 'Private • Untraceable • Decentralized • Fungible',
-        four: 'Explore'
+        three: 'Willing to be part of our Community more in depth?',
+        four: 'Join Telegram'
     },
     second: {
         one: 'Digital Cash For Highly-Confidential Transactions',
@@ -85,57 +85,57 @@ export default {
 
     timeline: {
         first: {
-            date: 'APRIL 2017',
-            version: 'SUMOKOIN LAUNCH',
-            desc: 'Sumokoin first release. Blockchain genesis'
+            date: 'April 2017',
+            version: 'Sumokoin Launch',
+            desc: 'Sumokoin first release. Blockchain genesis.'
         },
         second: {
-            date: 'JULY 2017',
+            date: 'July 2017',
             version: 'Sumokoin GUI wallet',
             desc: 'Easy to use, full featured GUI Wallet, created in python'
         },
         third: {
-            date: 'DECEMBER 2017',
+            date: 'December 2017',
             version: 'Subaddresses support',
             desc: 'Subaddress support for greater privacy/GUI wallet version released, supporting subaddresses (ghost addresses)'
         },
         fourth: {
-            date: 'APRIL 2018',
+            date: 'April 2018',
             version: 'Daemon/Wallet SSL support',
             desc: 'Add SSL support for deamon/wallet connection'
         },
         fifth: {
-            date: 'JUNE 2018',
+            date: 'June 2018',
             version: 'New robust difficulty algorithm',
             desc: 'Update of the difficulty algorithm to fence off 51%-timestamp manipulation attacks.'
         },
         sixth: {
-            date: 'SEPTEMBER 2018',
+            date: 'September 2018',
             version: 'Multisignature wallet',
             desc: 'Implement support for multisignature/shared transactions'
         },
         seventh: {
-            date: 'APRIL 2019',
+            date: 'April 2019',
             version: 'Enabling of bulletproos(v2) + Increasing Ringsize to 49',
             desc: 'Enabling of bulletproos(v2) that provide much smaller txs size at the same ringsize + Increasing the Ringsize to 49 for absolute resistance against privacy breaking tx traceability analysis attacks'
         },
         eighth: {
-            date: 'JUNE 2019',
+            date: 'June 2019',
             version: 'Blockchain Pruning + Multisig Messaging System + TOR&I2P cli intergration',
             desc: 'Introducing blockchain pruning feature that decreases the size of the blockchain more than 1/3 of its original size + Multisig Messaging System that simplifies the creation of multisig txs between remote users as well as providing easy of use, absolute privacy and security on crucial info exchanged (like key sets) + TOR&I2P cli intergration '
         },
         ninth: {
-            date: 'NOVEMBER 2019',
+            date: 'November 2019',
             version: 'Daemon RPC credit system + support syncing with pruned nodes + improve DDOS protection',
             desc: 'Users running an open node for remote wallet connections can now ask for credits for their services translated in mining hashes to their daemons  + daemons, pruned or not, can now optionally sync off pruned daemons + multiple DDOS protective measures to protect network and nodes stability'
         },
         tenth: {
-            date: 'JANUARY 2020',
+            date: 'January 2020',
             version: 'Sumokoin Web Wallet',
             desc: 'Innovative, full featured, easy to use, private and secure Sumokoin Online Web Wallet'
         },
        eleventh: {
-            date: 'NEXT TARGET (Q2 2020)',
+            date: 'Next Target (Q2 2020)',
             version: 'Sumokoin Android App Wallet',
             desc: 'Secure and private Sumokoin Android App Wallet'
         }
