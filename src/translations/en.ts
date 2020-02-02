@@ -60,6 +60,10 @@ export default {
         one: 'Binaries',
         two: 'Current version:'
     },
+    webwallet: {
+        header: 'Web Wallet',
+        description: 'Speed and Privacy: no keys sent to the server, no server database storing your data (it uses your local browser cache) while using openmonero faster and more robust tx construction method.'
+    },
     ninth: {
         one: 'Source Code - Whitepapers',
         two: 'For the bleeding edge (possibly unstable) features, just grab source code from our Github page and follow the guide to compile it.',

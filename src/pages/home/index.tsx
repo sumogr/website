@@ -4,9 +4,6 @@ import {
     fallbackImg,
 } from 'utils';
 
-
-  
-
 import PageContainer from 'components/pageContainer';
 import Button from 'components/button';
 import {
@@ -43,14 +40,49 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
+    
 } from '@fortawesome/free-brands-svg-icons';
+import {
+    faArrowRight,
+    faWallet
+} from '@fortawesome/free-solid-svg-icons';
 
 class Home extends React.Component {
-    public render() {
 
+    constructor(props: any) {
+        super(props);
+        this.state = {
+          error: null,
+          isLoaded: false,
+          items: []
+        };
+      }
+    
+      componentDidMount() {
+        fetch('https://api.coingecko.com/api/v3/coins/sumokoin')
+          .then(res => res.json())
+          .then(
+            (result) => {
+              this.setState({
+                isLoaded: true,
+                items: result.items
+              });
+            },
+            // Note: it's important to handle errors here
+            // instead of a catch() block so that we don't swallow
+            // exceptions from actual bugs in components.
+            (error) => {
+              this.setState({
+                isLoaded: true,
+                error
+              });
+            }
+          )
+      }
+
+    public render() {
         return(
             <div className="home">
-
                 <PageContainer className="first" middle>
                     <div className="col-sm-6 col-xs-12">
                         <h3 className="upper">{transl('first.one')}</h3>
@@ -145,6 +177,18 @@ class Home extends React.Component {
                     <div className="col-sm-6 col-xs-12">
                         <h1>{transl('exchanges.one')}</h1>
                         <h3 className="desc">{transl('exchanges.two')}</h3>
+                    </div>
+                </PageContainer>
+                <PageContainer className="eighth" id="wallet" big>
+                    <div className="col-sm-6 col-xs-12">
+                        <h1><FontAwesomeIcon icon={faWallet} /> {transl('webwallet.header')}</h1>
+                        <h2 className="under">{transl('webwallet.description')}</h2>
+                        
+                    <h3><a href="https://wallet.sumokoin.com/"><FontAwesomeIcon icon={faArrowRight} /> Go to the Web Wallet</a></h3> 
+
+                    </div>
+                    <div className="col-sm-6 col-xs-12 first-xs img-right">
+                        <img src={seventh} alt={transl('eighth.one')} onError={e => fallbackImg(e)} />
                     </div>
                 </PageContainer>
                 <PageContainer className="seventh" id="wallet" big>

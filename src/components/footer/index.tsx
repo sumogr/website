@@ -37,6 +37,8 @@ const Footer: React.SFC<{}> = () => (
                         <li className="title">{transl('footer.tools.title')}</li>
                         <li><a target="_blank" href="https://explorer.sumokoin.com/">{transl('footer.tools.block1')}</a></li>
                         <li><a target="_blank" href="https://sumoexplorer.com/">{transl('footer.tools.block2')}</a></li>
+                        <li><a target="_blank" href="https://web.telegram.org/#/im?p=@sumokoin_tipbot">Testnet Coins</a></li>
+
                     </ul>
                     <ul>
                         <li className="title">{transl('footer.mining.title')}</li>
